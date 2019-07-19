@@ -5,15 +5,13 @@
     </head>
     <body>
         <div class="container">
-            <div id="description">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, ad veniam debitis animi doloribus voluptatem minima accusantium explicabo enim. In non error ducimus atque nam ullam natus ipsam? Corporis, dolorum.</p>
-            </div>
             <form>
                 <div class="form-group">
-                    <label for="Enter the day">date</label>
+                    <label for="date">enter a date of birth</label>
                     <input type="number" class="form-control" placeholder="dd">
-                    <label for="Select the month">month</label>
-                    <select class="form-control" placeholder="select a month">
+                    <label for="month">select a month</label>
+                    <select class="form-control">
+                        <option>select a month</option>
                         <option>January</option>
                         <option>February</option>
                         <option>March</option>
@@ -27,8 +25,14 @@
                         <option>November</option>
                         <option>December</option>
                     </select>
-                    <label for="Enter the year of birth">year</label>
+                    <label for="year">Enter the year of birth</label>
                     <input type="number" class="form-control" placeholder="yyyy">
+                    <label for="gender">Enter the gender of the baby</label>
+                    <select class="form-control">
+                        <option>select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
