@@ -2,17 +2,18 @@
 <html>
     <head>
         <title>Akan name</title>
+        <script src="javascript.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="container">
-            <form>
+            <form id="form">
                 <div class="form-group">
                     <label for="date">enter a date of birth</label>
-                    <input type="number" class="form-control" placeholder="dd">
+                    <input type="number" id="dd" class="form-control" placeholder="dd">
                     <label for="month">select a month</label>
-                    <select class="form-control">
+                    <select class="form-control" id="mm">
                         <option>select a month</option>
                         <option>January</option>
                         <option>February</option>
@@ -28,15 +29,19 @@
                         <option>December</option>
                     </select>
                     <label for="year">Enter the year of birth</label>
-                    <input type="number" class="form-control" placeholder="yyyy">
+                    <input type="number" id="yy" class="form-control" placeholder="yyyy">
                     <label for="gender">Enter the gender of the baby</label>
-                    <select class="form-control">
+                    <select class="form-control" id="gender">
                         <option>select</option>
                         <option>Male</option>
                         <option>Female</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" onclick="printAkanName();" class="btn btn-primary">Submit</button>
+                <p id="display"></p>
+                <p id="display2"></p>
+                <p id="display3"></p>
+                <p id="display4"></p>
             </form>
         </div>
     </body>

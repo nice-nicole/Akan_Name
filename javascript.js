@@ -1,7 +1,4 @@
-// var day=document.getElementById(dd).value;
-// var month=mm.value;
-// var year=yy.value;
-function printDay(){
+function printAkanName(){
     // var day =document.getElementById('dd').value;
     var arrayMonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
     var day =parseFloat(dd.value);
@@ -29,10 +26,12 @@ function printDay(){
    var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
    var babyName;
    var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
-        if(Dayoftheweek && gender.value==="Male"){
-            babyName=maleNames[Dayoftheweek];
-        }else{
+    if(Dayoftheweek && gender.value==="Male"){
+        babyName=maleNames[Dayoftheweek];
+    }
+    else{
         babyName=femaleNames[Dayoftheweek];
     }
         document.getElementById('display3').innerHTML=babyName;
+        document.getElementById('display4').innerHTML=("Your new baby has born at "+day+" "+mm.value+" "+year+" on  "+nameOfDay+" . The baby is a "+gender.value+" and the baby name will be " +babyName+" :) :)");
 }
