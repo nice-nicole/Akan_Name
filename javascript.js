@@ -26,4 +26,6 @@ function printDay(){
    var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"] 
    var nameOfDay=days[Dayoftheweek];
    document.getElementById('display2').innerHTML=nameOfDay;
+   var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+   var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
 }
