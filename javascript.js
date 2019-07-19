@@ -27,5 +27,12 @@ function printDay(){
    var nameOfDay=days[Dayoftheweek];
    document.getElementById('display2').innerHTML=nameOfDay;
    var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+   var babyName;
    var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
+        if(Dayoftheweek && gender.value==="Male"){
+            babyName=maleNames[Dayoftheweek];
+        }else{
+        babyName=femaleNames[Dayoftheweek];
+    }
+        document.getElementById('display3').innerHTML=babyName;
 }
