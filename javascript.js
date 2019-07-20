@@ -19,14 +19,14 @@ function printAkanName(){
         
         var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
-        var babyName;
+        var akanName;
         if(Dayoftheweek && gender.value==="Male"){
-            babyName=maleNames[Dayoftheweek];
+            akanName=maleNames[Dayoftheweek];
         }
         else{
-            babyName=femaleNames[Dayoftheweek];
+            akanName=femaleNames[Dayoftheweek];
             }
-        document.getElementById('message').innerHTML=("Congratulations,Your new baby has born on  "+nameOfDay+", "+day+"th,"+mm.value+" "+year+". The baby is a "+gender.value+" and the baby name will be " +babyName+" :) :)"); 
+        document.getElementById('message').innerHTML=("Your Akan name is " +akanName); 
 
         }
     
