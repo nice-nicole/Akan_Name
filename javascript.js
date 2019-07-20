@@ -6,8 +6,8 @@ function printAkanName(){
     var month=parseFloat(arrayMonth.indexOf(mm.value)+1);
     var year=parseFloat(yy.value);
     
-    if(!day||(day<=0|| day>31)||(!month||month<=0||month>12)){
-        document.getElementById('dayError').innerHTML=("all fields are required, the date must be from 1 up to 31 and the month from January up to December!");
+    if(!day||(day<=0|| day>31)||(!month||month<=0||month>12)||!year){
+        alert("all fields are required, the date must be from 1 up to 31 and the month from January up to December!");
     }else{
 
         var century=(year-1)/100+1;
@@ -20,14 +20,16 @@ function printAkanName(){
         var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
         var akanName;
-        if(Dayoftheweek && gender.value==="Male"){
-            akanName=maleNames[Dayoftheweek];
-        }
-        else{
-            akanName=femaleNames[Dayoftheweek];
-            }
-        document.getElementById('message').innerHTML=("Your Akan name is " +akanName); 
 
-        }
+        if(gender.value){
+            if(Dayoftheweek && gender.value==="Male"){
+                akanName=maleNames[Dayoftheweek];
+            }
+            else{
+                akanName=femaleNames[Dayoftheweek];
+                } 
+        document.getElementById('message').innerHTML=("Your Akan name is " +akanName);
+        }alert("Choose your gender!");
+    }
     
 }
