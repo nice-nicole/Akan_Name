@@ -1,6 +1,26 @@
-input[type=number], #mm, #gender{
-    width:40%;
+body{
+    /* background: url("../images/img.png"); */
+    /* background: url("../images/img2.png"); */
+    /* background: url("../images/img3.png"); */
+    /* background: url("../images/img5.jpg"); */
+    /* background: url("../images/img6.jpg"); */
+    /* background: url("../images/img7.png"); */
+    /* background: url("../images/img8.png"); */
+    background: url("../images/img10.jpg");
+    /* background: url("../images/img11.jpg"); */
+    background-size: cover;
+    position: fixed;
 }
-#description{
-    width:40%;
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width:80%;
+    padding: 10px;
+    margin:10% 30% 10% 30%;
+    background-color: beige;
+    transform: rotate(0deg);
 }
