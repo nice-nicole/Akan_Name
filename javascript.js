@@ -6,8 +6,8 @@ function printAkanName(){
     var month=parseFloat(arrayMonth.indexOf(mm.value)+1);
     var year=parseFloat(yy.value);
     
-    if((day<=0|| day>31)||(month<=0||month>12)){
-        document.getElementById('dayError').innerHTML=("The date must be between 1 and 31 and the month between January and December!");
+    if(!day||(day<=0|| day>31)||(!month||month<=0||month>12)){
+        document.getElementById('dayError').innerHTML=("all fields are required, the date must be from 1 up to 31 and the month from January up to December!");
     }else{
 
         var century=(year-1)/100+1;
