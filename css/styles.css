@@ -14,10 +14,23 @@ body{
     background-color:rgb(190, 166, 212);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    font-size: 1.2em;
+    color:white;
 }
 #description{
     width:30%;  
 }
 #right_side{
      width:30%; 
+}
+input[type=number],#mm,#gender{
+    border: none;
+    border-bottom: 2px solid;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: purple;
+}
+#description>h1{
+        text-shadow: 2px 2px gray;
 }
