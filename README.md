@@ -2,6 +2,8 @@
 #### Akan name generate names according to the date and gender given by the user, July,20th,2019
 #### By **Nice Nicole**
 ## Description
+https://nice-nicole.github.io/Akan_Name/
+
 Akan name is an application where users that want to see what their akan name looks like,enter their birth day and gender and the application gives in return their akan name based on the information provided. Origin of akan names is from Ghana and the application return ghaneen names.
 ## Setup/Installation Requirements
 * This is a great place

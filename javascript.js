@@ -6,14 +6,14 @@ function printAkanName(){
     var month=parseFloat(arrayMonth.indexOf(mm.value)+1);
     var year=parseFloat(yy.value);
     
-    if(!day||(day<=0|| day>31)||(!month||month<=0||month>12)||!year){
+    if((!day||day<=0|| day>31)||(!month||month<=0||month>12)||!year){
         alert("all fields are required, the date must be from 1 up to 31 and the month from January up to December!");
     }else{
 
         var century=(year-1)/100+1;
 
         var Dayoftheweek = Math.round(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
-        var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"] 
+        var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"] 
         var nameOfDay=days[Dayoftheweek];
 
         
@@ -21,15 +21,22 @@ function printAkanName(){
         var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afuaa","Ama"];
         var akanName;
 
-        if(gender.value){
-            if(Dayoftheweek && gender.value==="Male"){
-                akanName=maleNames[Dayoftheweek];
-            }
-            else{
+        // document.getElementById('dayName').innerHTML= nameOfDay;
+
+        if(Dayoftheweek || Dayoftheweek===0 && gender.value==="Male"){
+            akanName=maleNames[Dayoftheweek];
+                    
+            document.getElementById('message').innerHTML= ("Your akan name is " + akanName);
+        }
+        else if(Dayoftheweek ||Dayoftheweek===0 && gender.value==="Female"){
                 akanName=femaleNames[Dayoftheweek];
-                } 
-        document.getElementById('message').innerHTML=("Your Akan name is " +akanName);
-        }alert("Choose your gender!");
+                document.getElementById('message').innerHTML= ("Your akan name is "+ akanName);
+        }
+        else{
+            alert("choose a gender");
+        }
+
     }
-    
+   
+ 
 }

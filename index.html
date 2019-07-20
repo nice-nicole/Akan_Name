@@ -8,41 +8,47 @@
     </head>
     <body>
         <div class="container">
-            <form id="form">
-                <div class="form-group">
-                    <label for="date">enter a date of birth</label>
-                    <input type="number" id="dd" class="form-control" placeholder="dd">
-                    <label for="month">select a month</label>
-                    <select class="form-control" id="mm">
-                        <option>select a month</option>
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                        <option>July</option>
-                        <option>August</option>
-                        <option>September</option>
-                        <option>October</option>
-                        <option>November</option>
-                        <option>December</option>
-                    </select>
-                    <label for="year">Enter the year of birth</label>
-                    <input type="number" id="yy" class="form-control" placeholder="yyyy">
-                    <label for="gender">Enter the gender of the baby</label>
-                    <select class="form-control" id="gender">
-                        <option>select</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                </div>
-                <button type="button" onclick="printAkanName();" class="btn btn-primary">Submit</button>
-                <p id="display"></p>
-                <p id="display2"></p>
-                <p id="display3"></p>
-                <p id="display4"></p>
-            </form>
+            <div id="description">
+                <h1>Akan name</h1>  
+                <p>Akan name application helps you to find your Akan name according to your birth day and gender details provided.
+                    Let's proceed:
+                </p>
+            </div>
+            <div id="right_side">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="date">enter date of birth</label>
+                        <input type="number" id="dd" class="form-control" placeholder="dd" required>
+                        <label for="month">select a month</label>
+                        <select class="form-control" id="mm" required>
+                            <option>select a month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <label for="year">Enter year of birth</label>
+                        <input type="number" id="yy" class="form-control" placeholder="yyyy" required>
+                        <label for="gender">Select your gender</label>
+                        <select class="form-control" id="gender" required>
+                            <option>select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="printAkanName();" class="btn btn-primary">Submit</button>
+                    <p id="dayName"></p>
+                    <p id="message"></p>
+                </form>
+            </div>
         </div>
     </body>
 </html>
