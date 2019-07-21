@@ -11,7 +11,7 @@ Akan name is an application where users that want to see what their akan name lo
 * have acces to the internet
 * Use any browser(Google Chrome, Mozilla Firefox, Safari and so on..)
 * Type Akan name in the search engine and fill the information and get your Akan name. It's easy and simple.
-##Behaviour Driven Development
+## Behaviour Driven Development
 * if users forget to enter a date of a month or year;
 * if users enter a invalid date, it means a date which is less or equal to zero or greater than 31;
 * if users enter an invalid month, it means a month which is not found in the dropdown given with the page;
