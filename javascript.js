@@ -22,19 +22,16 @@ function printAkanName(){
         var akanName;
 
         // document.getElementById('dayName').innerHTML= nameOfDay;
-
-        if(Dayoftheweek || Dayoftheweek===0 && gender.value==="Male"){
+        if(gender.value==="Male"){
             akanName=maleNames[Dayoftheweek];
-                    
-            document.getElementById('message').innerHTML= ("Your akan name is " + akanName);
         }
-        else if(Dayoftheweek ||Dayoftheweek===0 && gender.value==="Female"){
+        else if(gender.value==="Female"){
                 akanName=femaleNames[Dayoftheweek];
-                document.getElementById('message').innerHTML= ("Your akan name is "+ akanName);
         }
         else{
             alert("choose a gender");
         }
+        document.getElementById('message').innerHTML= ("Your akan name is " + akanName);
 
     }
    
