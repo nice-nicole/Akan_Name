@@ -33,7 +33,7 @@ function printAkanName(){
         }
         document.getElementById('message').innerHTML= ("Your akan name is " + akanName);
 
-    }
+        }
    
  
 }
